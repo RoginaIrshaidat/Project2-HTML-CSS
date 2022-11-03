@@ -6,15 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.css">
         <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="stylesheet" href="mediaQuery.css">
         <script src="https://kit.fontawesome.com/a8b56cb52b.js" crossorigin="anonymous"></script>
         <title>My portfolio</title>
     </head>
     <body>
             <header >
                 <section>
-                    <div Id="backgroundImage" >
                         <nav class="navbar navbar-expand-lg fixed-top " style="background-color: #3C3F58;" >
-                            <div class="container-fluid">
+                            <div class="container">
                             <a class="navbar-brand" href="#" ><img src="Pictures/Logo.png" style="width: 70px;height:70px;margin-right: 6em;"></a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -41,16 +41,16 @@
                                     </ul>                        
                             </div>                
                         </nav>
-                    </div>  
+                        <div  Id="backgroundImage" > 
+                            <a href="/ROginaCv-.pdf" download><button type="button" id="resumeButton"> My Resume</button></a>   
+                        </div>
                 </section>
-                    <!-- <a href="/ROginaCv-.pdf" download><button type="button" id="resumeButton"> My Resume</button></a>    -->
+                    
             </header>
-
-            <main>  
-                <section>
-                    <h1 style="color: #3BBA9C;"> Education</h1>
+            <main >  
+                <section >
+                    <h1 style="color: #3BBA9C;margin-left: 5%; "> Education</h1>
                     <div id="education">
-                        
                         <div class="educationCard">
                             <img src="Pictures/aabu.png" alt="Education-Certificate" class="educationCertificateImg">
                             <div class="eductionDesc">
@@ -75,8 +75,8 @@
                 <section>
                     <div id="skills">
                         <div id="technicalSkills">
-                            <h1> Skills</h1><br><br>
-                        <h2><b> Technical Skills </b> </h2><br>
+                            <h1 style="margin-left: 5%;"> Skills</h1><br><br>
+                        <h2 style="margin-left: 5%;"><b> Technical Skills </b> </h2><br>
                         <div class="technicallRowGrid">
                             <div >
                             <i class="fa-brands fa-html5" style="font-size:xx-large; color:#3BBA9C;"></i><br>
@@ -96,7 +96,7 @@
                             </div>
                        </div>  
                        <br><br>
-                        <h2><b> Soft Skills </b> </h2><br><br>
+                        <h2 style="margin-left: 5%;"><b> Soft Skills </b> </h2><br><br>
                         <div class="technicallRowGrid">               
                             <div >
                                 <i class="fa-regular fa-clock" style="font-size:xx-large; color:#3BBA9C;"></i>
@@ -118,7 +118,7 @@
                     </div>
                 </section>
                <section>
-                 <h1 style="color: white;"> Certificate </h1>
+                 <h1 style=" color: #3BBA9C;margin-left: 5%;"> Certificate </h1>
                     <div id="certificate">
                         <div class="myCertificate">
                             <div>
@@ -149,60 +149,59 @@
                         </div>
                     </div>
                </section>
-
-               <section >
+               <section  >                   
                     <div id="references" >
                         <img src="Pictures/Mohammed-Frehat.jpeg" alt="Mohammed-Frehat-Picture" class="refrencesImg">
-                        <div style="font-size: 1em; text-align:center; margin-top:5em ;font-weight: bold;">
+                        <div class="references-div" style="font-size: 1em; text-align:center; margin-top:5em ;font-weight: bold;">
                             Mohammed Frehat<br>
                             Coding Academy Manager<br>
                             <a href="https://www.linkedin.com/in/mohammed-frehat-9222402b/">
-                            <i class="fa-brands fa-linkedin" style=" color: #2E3047; font-size:xx-large;margin-top: 1em;"></i>
+                            <i class="fa-brands fa-linkedin" id="referenesIcon" ></i>
                             </a>
                             <a href="https://wa.me/0776808599" target="_blank">
-                            <i class="fa-brands fa-square-whatsapp" style=" color: #2E3047; font-size:xx-large;"></i>
+                            <i class="fa-brands fa-square-whatsapp" id="referenesIcon"></i>
                             </a>
                         </div>     
                         <img src="Pictures/Hala Obeidat.jpeg" alt="Hala-Obeidat-Picture" class="refrencesImg">
-                        <div style="font-size: 1em; text-align:center; margin-top:5em ;font-weight: bold;">
+                        <div class="references-div" style="font-size: 1em; text-align:center; margin-top:5em ;font-weight: bold;">
                             Hala Obeidat<br>
                             Job Coach at Orange Coding Academy<br>
                             <a href="https://www.linkedin.com/in/hala-obeidat12/">
-                            <i class="fa-brands fa-linkedin" style=" color: #2E3047; font-size:xx-large;margin-top: 1em;"></i>
+                            <i class="fa-brands fa-linkedin" id="referenesIcon"></i>
                             </a>
                             <a href="https://wa.me/0776809087" target="_blank">
-                            <i class="fa-brands fa-square-whatsapp" style=" color: #2E3047; font-size:xx-large;"></i>
+                            <i class="fa-brands fa-square-whatsapp" id="referenesIcon"></i>
                             </a>
-                    </div>
-                    <img src="Pictures/Hala Hamdan.jpeg" alt="Hala-Hamdan-Picture" class="refrencesImg">
-                    <div style="font-size: 1em; text-align:center; margin-top:5em ;font-weight: bold;margin-left: 1em;" >
+                        </div>
+                        <img src="Pictures/Hala Hamdan.jpeg" alt="Hala-Hamdan-Picture" class="refrencesImg">
+                        <div class="references-div" style="font-size: 1em; text-align:center; margin-top:5em ;font-weight: bold;" >
                             Hala Hamdan <br>
                             Full Stack Technical Trainer at Orange<br>
                             <a href="https://www.linkedin.com/in/hala-hamdan-927941163/" target="_blank">
-                            <i class="fa-brands fa-linkedin" style=" color: #2E3047; font-size:xx-large;margin-top: 1em;"></i>
+                            <i class="fa-brands fa-linkedin" id="referenesIcon"></i>
                             </a>
                             <a href="https://wa.me/0776802579" target="_blank">
-                            <i class="fa-brands fa-square-whatsapp" style=" color: #2E3047; font-size:xx-large;"></i>
+                            <i class="fa-brands fa-square-whatsapp" id="referenesIcon"></i>
                             </a>
                         </div>
                         <img src="Pictures/Alaa Qazaq.jpeg" alt="Alaa-Qazaq-Picture" class="refrencesImg">
-                        <div style="font-size: 1em; text-align:center; margin-top:5em ;font-weight: bold;">
+                        <div class="references-div" style="font-size: 1em; text-align:center; margin-top:5em ;font-weight: bold;">
                             Alaa Qazaq <br>
                             Lead traniner for Full-stack web <br>
                             developer @ Orange Jordan<br>
                             <a href="https://www.linkedin.com/in/alaa-qazaq-b25b5783/" target="_blank">
-                            <i class="fa-brands fa-linkedin" style=" color: #2E3047; font-size:xx-large;margin-top: 1em;"></i>
+                            <i class="fa-brands fa-linkedin" id="referenesIcon"></i>
                             </a>
                             <a href="https://wa.me/0776807230" target="_blank">
-                            <i class="fa-brands fa-square-whatsapp" style=" color: #2E3047; font-size:xx-large;"></i>
+                            <i class="fa-brands fa-square-whatsapp" id="referenesIcon"></i>
                             </a>
                         </div>
                    </div>
                </section>
 
-               <section id="language" >
-                <h1> Language</h1> 
-                    <div >
+               <section id="language"  >
+                <h1 style="margin-left: 5%;"> Language</h1> 
+                    
                         <div class="lang">
                             <div id="englishCard">
                                 <table style="margin-left: 3em;" >
@@ -211,15 +210,15 @@
                                     </tr>
                                     <tr>
                                         <td> Speacking</td>
-                                        <td><i class="fa-solid fa-star" style="color: #3BBA9C; font: size 5em;  margin-left: 12em;"></i> <i class="fa-solid fa-star"style="color: #3BBA9C; font: size 1em;  margin-right: 1em;"></i><i class="fa-regular fa-star" style="color: #3BBA9C; font: size 5em;  margin-right: 1em;"></i><i class="fa-regular fa-star" style="color: #3BBA9C; font: size 5em;  margin-right: 1em;"></i><i class="fa-regular fa-star"style="color: #3BBA9C; font: size 5em;  margin-right: 1em;"></i></td>
+                                        <td><i class="fa-solid fa-star" id="languageStar"></i> <i class="fa-solid fa-star"id="languageStar"></i><i class="fa-regular fa-star" id="languageStar"></i><i class="fa-regular fa-star"  id="languageStar"></i><i class="fa-regular fa-star"id="languageStar"></i></td>
                                     </tr>
                                     <tr>
                                         <td>Writing</td>
-                                        <td><i class="fa-solid fa-star" style="color: #3BBA9C; font: size 5em;  margin-left: 12em;"></i> <i class="fa-solid fa-star"style="color: #3BBA9C; font: size 1em;  margin-right: 1em;"></i><i class="fa-solid fa-star"style="color: #3BBA9C; font: size 5em;  margin-right: 1em;"></i><i class="fa-regular fa-star" style="color: #3BBA9C; font: size 5em;  margin-right: 1em;"></i><i class="fa-regular fa-star"style="color: #3BBA9C; font: size 5em;  margin-right: 1em;"></i></td>
+                                        <td><i class="fa-solid fa-star" id="languageStar"></i> <i class="fa-solid fa-star"id="languageStar"></i><i class="fa-solid fa-star"id="languageStar"></i><i class="fa-regular fa-star" id="languageStar"></i><i class="fa-regular fa-star" id="languageStar"></i></td>
                                     </tr>
                                     <tr>
                                         <td>Reading</td>
-                                        <td><i class="fa-solid fa-star" style="color: #3BBA9C; font: size 5em;  margin-left: 12em;"></i> <i class="fa-solid fa-star"style="color: #3BBA9C; font: size 1em;  margin-right: 1em;"></i><i class="fa-solid fa-star"style="color: #3BBA9C; font: size 5em;  margin-right: 1em;"></i><i class="fa-solid fa-star" style="color: #3BBA9C; font: size 5em;  margin-right: 1em;"></i><i class="fa-regular fa-star"style="color: #3BBA9C; font: size 5em;  margin-right: 1em;"></i></td>
+                                        <td><i class="fa-solid fa-star" id="languageStar"></i> <i class="fa-solid fa-star" id="languageStar"></i><i class="fa-solid fa-star" id="languageStar"></i><i class="fa-solid fa-star" id="languageStar"></i><i class="fa-regular fa-star" id="languageStar"></i></td>
                                     </tr>
                                 </table>
                             </div>    
@@ -230,31 +229,31 @@
                                     </tr>
                                     <tr>
                                         <td> Speacking</td>
-                                        <td><i class="fa-solid fa-star" style="color: #3BBA9C; font: size 5em;  margin-left: 12em;"></i> <i class="fa-solid fa-star"style="color: #3BBA9C; font: size 1em;  margin-right: 1em;"></i><i class="fa-solid fa-star" style="color: #3BBA9C; font: size 5em;  margin-right: 1em;"></i><i class="fa-solid fa-star" style="color: #3BBA9C; font: size 5em;  margin-right: 1em;"></i><i class="fa-regular fa-star"style="color: #3BBA9C; font: size 5em;  margin-right: 1em;"></i></td>
+                                        <td><i class="fa-solid fa-star"  id="languageStar"></i> <i class="fa-solid fa-star"id="languageStar"></i><i class="fa-solid fa-star" id="languageStar"></i><i class="fa-solid fa-star" id="languageStar"></i><i class="fa-regular fa-star" id="languageStar"></i></td>
                                     </tr>
                                     <tr>
                                         <td>Writing</td>
-                                        <td><i class="fa-solid fa-star" style="color: #3BBA9C; font: size 5em;  margin-left: 12em;"></i> <i class="fa-solid fa-star"style="color: #3BBA9C; font: size 1em;  margin-right: 1em;"></i><i class="fa-solid fa-star"style="color: #3BBA9C; font: size 5em;  margin-right: 1em;"></i><i class="fa-regular fa-star" style="color: #3BBA9C; font: size 5em;  margin-right: 1em;"></i><i class="fa-regular fa-star"style="color: #3BBA9C; font: size 5em;  margin-right: 1em;"></i></td>
+                                        <td><i class="fa-solid fa-star" id="languageStar"></i> <i class="fa-solid fa-star"id="languageStar"></i><i class="fa-solid fa-star" id="languageStar"></i><i class="fa-regular fa-star" id="languageStar"></i><i class="fa-regular fa-star" id="languageStar"></i></td>
                                     </tr>
                                     <tr>
                                         <td>Reading</td>
-                                        <td><i class="fa-solid fa-star" style="color: #3BBA9C; font: size 5em;  margin-left: 12em;"></i> <i class="fa-solid fa-star"style="color: #3BBA9C; font: size 1em;  margin-right: 1em;"></i><i class="fa-solid fa-star"style="color: #3BBA9C; font: size 5em;  margin-right: 1em;"></i><i class="fa-solid fa-star" style="color: #3BBA9C; font: size 5em;  margin-right: 1em;"></i><i class="fa-regular fa-star"style="color: #3BBA9C; font: size 5em;  margin-right: 1em;"></i></td>
+                                        <td><i class="fa-solid fa-star" id="languageStar"></i> <i class="fa-solid fa-star"id="languageStar"></i><i class="fa-solid fa-star" id="languageStar"></i><i class="fa-solid fa-star" id="languageStar"></i><i class="fa-regular fa-star" id="languageStar"></i></td>
                                     </tr>
                                 </table>
                             </div>
                         </div>   
-                    </div>
+                    
                </section>
             </main>
 
          <footer >
-            <div id="footer" style="background-color:#3BBA9C;">
-                <div id="footerMedia">
+            <div style="background-color:#c0c0c7;" >
+                <div class="">
                     <a href="https://wa.me/0778097743" target="_blank"> <i class="fa-brands fa-square-whatsapp" style=" color: #2E3047; font-size:xx-large;margin: 1em;margin-left: 3em;"></i></a>
                     <a href="https://www.linkedin.com/in/rogina-irshaidat-1a342321b/" target="_blank"><i class="fa-brands fa-linkedin" style=" color: #2E3047; font-size:xx-large;margin: 1em;margin-left: 1em;"></i></a>
                     <a href="https://github.com/RoginaIrshaidat" target="_blank"><i class="fa-brands fa-github"  style=" color: #2E3047; font-size:xx-large; margin: 1em"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=100086027113382" target="_blank"> <i class="fa-brands fa-facebook"  style=" color: #2E3047; font-size:xx-large; margin: 1em"></i></a>  
-                    <i class="fa-solid fa-envelope"  style=" color: #2E3047; font: size 20px; margin: 2em;"> roginaershedat@gmail.com </i>
+                    <a href="https://mail.google.com/" target="_blank"> <i class="fa-solid fa-envelope"  style=" color: #2E3047; font: size 20px; margin: 2em;"> roginaershedat@gmail.com </i></a>
                     <i class="fa-solid fa-mobile-screen-button"  style=" color: #2E3047; font-size:20px;margin: 2em;">  00963778097743</i>
                     <i class="fa-solid fa-phone"  style=" color: #2E3047; font-size:20px;margin: 2em;">  02-7360637</i>
                 </div>

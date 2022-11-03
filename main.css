@@ -1,29 +1,26 @@
 body{
     background-color: #3C3F58;
     opacity: 0.8;  
-   
 }
 header{
     position: relative;
+}
+section{
+    width: 100%;
 }
 .itemNavHover:hover{
     margin-right: 1.5em;
     margin-left: 1.5em;
 }
 #backgroundImage{
-    background-image: url('Pictures/Me.png');
+    background-image: url('Pictures/me.png');
     height: 50em;
     background-repeat:no-repeat ;
     background-size: cover;
     position: relative;
     margin-bottom:10em;
 }
-@media only screen and (min-device-width:481px) and (max-device-width:768px){
-    #backgroundImage{
-        height: 25em;
-    }
-}
-/* #resumeButton{
+#resumeButton{
     background-color: #3BBA9C;
     color: #3C3F58;
     border: none;
@@ -33,7 +30,7 @@ header{
     margin-bottom: 8em;
     position: absolute;
     bottom: .25rem;   
-} */
+}
 #education{
     background-color: #3BBA9C;
     color: #2E3047;;
@@ -46,22 +43,6 @@ header{
     box-shadow: 0em 2em 4em 0em #707793;
     transition: 0.3s;
     width: 45%;
-}
-@media only screen and (min-device-width:0px) and (max-device-width:480px){
-    #education{
-        flex-direction: column;        
-    }
-    .educationCard{
-        width: 100%;
-    }
-}
-@media only screen and (min-device-width:481px) and (max-device-width:768px){
-    #education{
-        flex-direction: column;        
-    }
-    .educationCard{
-        width: 100%;
-    }
 }
 .educationCard:hover{
     box-shadow:1em 4em 8em 1em #3C3F58;
@@ -89,37 +70,19 @@ header{
     row-gap: 2em;
     text-align: center;
 }
-@media only screen and (min-device-width:0px) and (max-device-width:480px){
-    #skills{
-        display: grid;
-        flex-direction: column; 
-        flex-wrap: wrap;
-    }
-    .technicallRowGrid{
-        width: 100%;
-    }
-}
-@media only screen and (min-device-width:481px) and (max-device-width:768px){
-    #skills{
-        flex-direction: column; 
-    }
-    .technicallRowGrid{
-        width: 100%;
-    }
-}
 #certificate{
     display: flex;   
     flex-wrap: nowrap;
-    justify-content: center;
+    align-items: center;
     justify-content: space-around;
-    background-color: #3C3F58;
-    color: #ffffff;
+    background-color: #3BBA9C;
+    color: #3BBA9C;
 }
 .myCertificate{
-    border: 2px solid #3BBA9C;
+    border: 2px solid #3C3F58;
     background-color: #3C3F58;
     width: 30%;
-    height: 30em;
+    height: 25em;
     margin-top: 2em;
     padding: 5em;   
 }
@@ -129,85 +92,49 @@ header{
     border-radius: 3em;
     justify-content: center; 
     justify-content: space-around;
-}
-@media only screen and (min-device-width:0px) and (max-device-width:480px){
-    #certificate{
-        display: flex;
-        flex-direction: column;
-    }
-    .myCertificate{
-        width: 100%;
-    }
-}  
-@media only screen and (min-device-width:481px) and (max-device-width:768px){
-    #certificate{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;  
-    }
-    .myCertificate{
-        width: 100%;
-    }
 }   
 #references{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: #3BBA9C;
-    color: #2E3047;
-    padding: 5em;
-    
-}
-.refrencesImg{
-    height: 15em;
-    width:15em;
-    border-radius: 50%;
-    margin-left: 5em;  
-}
-@media only screen and (min-device-width:481px) and (max-device-width:768px){
-    #references{
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-template-rows: auto auto;
-    }
-    .refrencesImg{
-        width: 50%;
-        border-radius: 50%;
-        justify-content: space-around;
-    }
-}
-#language{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
     background-color: #2E3047;
     color: #3BBA9C;
+    padding: 5em;
+    width: 100%; 
+}
+.refrencesImg{
+    border: 1px solid black;
+    width:19%;
+    border-radius: 50%; 
+}
+.references-div{
+    width: 29%;  
+}
+#referenesIcon{
+     color: #3BBA9C; 
+     font-size:xx-large;
+     margin-top: 1em;
+}
+#language{
+    background-color: #3BBA9C;
+    color: #2E3047;
+    display: flex;
+}
+#languageStar{
+    color: #2E3047; 
+    font: size 5em;
+    margin-left: 8px;
 }
 .lang {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;    
+    margin-left: 8%;
 }
 #englishCard{
     width:100%;
     padding: 3em 0;
-    margin-top: 4em 1em;   
+    margin-top: 4em 1em;       
+
 }
-@media only screen and (min-device-width:0) and (max-device-width:480){
-    #language{
-        flex-direction: column;   
-    }
-    #englishCard{
-        width: 100%;
-        padding: 1em 0;
-        margin-top: 2em 1em; 
-    } 
-} 
-@media only screen and (min-device-width:481px) and (max-device-width:768px){
-    #language{
-        flex-direction: row;   
-    }
-    #englishCard{
-        width: 100%;
-        padding: 1em 0;
-        margin-top: 2em 1em; 
-    } 
-} 
+
